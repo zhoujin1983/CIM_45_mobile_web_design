@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Main Characteristic of PWA</title>  
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+
+        window.addEventListener('error', function (error) {
+            if (ChromeSamples && ChromeSamples.setStatus) {
+                console.error(error);
+                ChromeSamples.setStatus(error.message + ' (Your browser may not support this feature.)');
+                error.preventDefault();
+            }
+        });
+    </script>   
+
+</head>
+<body>
+
+    <h1>Main characteristic of PWA</h1>
+    <ul>
+        <h3>Full resposiveness and compatibility</h3>
+        <p>PWAs work with all browsers and are compatible with any device. regardless of screen size and other specifications.</p>
+        <h3>Connectivity independence.</h3>
+        <p>Progressive web applications can work both offline and on low-quality networks.</p>
+        <h3>Discoverability and easy installation</h3>
+        <p>These apps can be shared through a URL instead so they’re easily found. The installation is simple and entails visiting a site and adding it to a device home screen.</p>
+        <h3>App-like interface</h3>
+        <p>These apps mimic navigation and interactions of native apps.</p>
+
+    </ul>
+    <SELECT onChange="changebg(this)">
+        <OPTION SELECTED>select
+        <OPTION VALUE="url('lightblue.jpg')">lightblue
+        <OPTION VALUE="url('lightgold.jpg')">lightgold
+    </SELECT>
+
+    <script language=javascript>
+        function changebg(obj) {
+            selindex = obj.selectedIndex
+            bgsrc = obj.options[selindex].value
+            document.body.style.background = bgsrc
+        }
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>ABC Toys</title>
+
+</head>
+
+<body>
+    <!-- This is the first page -->
+    <section id="page1" data-role="page">
+        <header data-role="header">
+            <h1>ABC Toys</h1>
+        </header>
+        <div data-role="content">
+            <h3>Making learning fun</h3>
+
+
+            <p>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
+            <p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.</p>
+            <p>By the way, parents love our toys too.</p>
+        </div>
+        <div data-role="footer" class="myicon">
+            <div data-role="navbar" class="myicon" data-grid="c">
+                <ul>
+                    <li><a href="#page1" data-icon="custom">Home</a></li>
+                    <li><a href="#page2" data-icon="custom">Contact US</a></li>
+                    <li><a href="#page3" data-icon="custom">Products</a></li>
+                    <li><a href="#page4" data-icon="custom">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- This is the second page -->
+
+    <div id="page2" data-role="page">
+        <header data-role="header">
+            <h1>Contact Us</h1>
+        </header>
+        <div data-role="content">
+            <address>
+                Visit us at:<br>
+                <a href="https://www.abctoys.com">www.abctoys.com!</a><br />
+                Box 564, Disneyland<br>
+                USA<br />
+                <a href="mailto:abctoys@gmail.com">Email:abctoys@gmail.com</a><br />
+                <a href="tel:+111-555-2368">Tel:+111-555-2368</a><br />
+                <a href="https://www.facebook.com/abctoys">Facebook!</a>
+            </address>
+            <form method="get" action="#">
+                <fieldset class="ui-field-contain">
+                    <label for="address">Name:</label>
+                    <input type="text" name="name" id="name" value="" placeholder="Your Name" />
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address" value="" placeholder="Your Address" />
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" value="" placeholder="Your Email" />
+                    <label for="details">Comment</label>
+                    <textarea id="details"></textarea>
+                    <input type="submit" value="Submit">
+                </fieldset>
+                </form>
+
+
+        </div>
+        <div data-role="footer" class="myicon">
+            <div data-role="navbar" class="myicon" data-grid="c">
+                <ul>
+                    <li><a href="#page1" data-icon="custom">Home</a></li>
+                    <li><a href="#page2" data-icon="custom">Contact US</a></li>
+                    <li><a href="#page3" data-icon="custom">Products</a></li>
+                    <li><a href="#page4" data-icon="custom">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the third page-->
+    <style>
+        img {
+            max-width: 100%;
+            float: left;
+        }
+
+    </style>
+    <div id="page3" data-role="page">
+        <header data-role="header">
+            <h1>ABC Toys Products</h1>
+        </header>
+        <div data-role="content">
+            <div data-role="collapsible" data-theme="b" data-content-theme="b">
+                <h4>Our Toys</h4>
+                <div data-role="collapsibleset" data-theme="b" data-content-theme="a">
+                    <div data-role="collapsible" data-collapsed-icon="info">
+                        <h3>Toy 1</h3>
+                        <p><img src="panda.jpg" alt="pic1" /> this is my toy 1!It is fun to play with it!</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="info">
+                        <h3>Toy 2</h3>
+                        <p><img src="frog.png" alt="pic2" /> this is my toy 2!It is fun to play with it!</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="info">
+                        <h3>Toy 3</h3>
+                        <p><img src="fish.png" alt="pic3" /> this is my toy 3!It is fun to play with it!</p>>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="info">
+                        <h3>Toy 4</h3>
+                        <p><img src="littlemonster.png" alt="pic4" />
+                        this is my toy 4!It is fun to play with it!</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="info">
+                        <h3>Toy 5</h3>
+                        <p><img src="house.png" alt="pic5" /> this is my toy 5!It is fun to play with it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" class="myicon">
+            <div data-role="navbar" class="myicon" data-grid="c">
+                <ul>
+                    <li><a href="#page1" data-icon="custom">Home</a></li>
+                    <li><a href="#page2" data-icon="custom">Contact US</a></li>
+                    <li><a href="#page3" data-icon="custom">Products</a></li>
+                    <li><a href="#page4" data-icon="custom">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the forth page-->
+    <div id="page4" data-role="page">
+        <header data-role="header">
+            <h1>Location </h1>
+        </header>
+        <div data-role="content">
+            <p>When we open our store, we will let you know our location here even with dirctions from your place to it!!</p>
+            <p>Click the button to get your coordinates.</p>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="demo"></p>
+
+            <script>
+                var x = document.getElementById("demo");
+
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+                }
+            </script>
+        </div>
+        <div data-role="footer" class="myicon">
+            <div data-role="navbar" class="myicon" data-grid="c">
+                <ul>
+                    <li><a href="#page1" data-icon="custom">Home</a></li>
+                    <li><a href="#page2" data-icon="custom">Contact US</a></li>
+                    <li><a href="#page3" data-icon="custom">Products</a></li>
+                    <li><a href="#page4" data-icon="custom">Location</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
